@@ -1,0 +1,400 @@
+@font-face{
+    font-family: 'monoton';
+    src: url("assets/fonts/Monoton-Regular.ttf");
+}
+
+@font-face{
+    font-family: 'roboto_li';
+    src: url("assets/fonts/roboto/Roboto-Light.ttf");
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,34,60,1) 0%, rgba(0,16,35,1) 100%);
+    background-image: url("assets/bg_gradient.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+input:focus{
+    outline: none;
+}
+
+.topbar{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.top_title{
+    font-family: 'monoton';
+    color: #ffffffbd;
+    font-size: 5rem;
+    font-weight: 100;
+    margin: 0;
+    text-shadow: -4px 4px 2px rgb(0 0 0 / 40%);
+}
+
+.vird_icon{
+    height: 85px;
+    margin-left: 10px;
+}
+
+.subtitle{
+    margin: 0;
+    margin-top: 17px;
+    font-family: 'roboto_li';
+    font-size: 1.3rem;
+    margin-left: 15px;
+    color: #e8bf00;
+    border: 1px solid #e8bf00;
+    box-sizing: border-box;
+    padding: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+}
+
+.theform{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.wrapper{
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.cast_div{
+    display: flex;
+    flex-direction: row;
+}
+
+.inp_cast{
+    width: 100%;
+}
+
+.text_inp{
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid #ffffff87;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+    padding-left: 17px;
+    font-size: 1.1rem;
+    height: 100px;
+    resize: none;
+    transition: .3s;
+}
+
+.text_inp:hover{
+    background-color: #00000047;
+}
+
+.text_inp:focus{
+    border: 2px solid #e8bf00cc;
+    background-color: #00000047;
+    outline: none;
+}
+
+.s_inp{
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid #ffffff87;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    color: white;
+    padding-left: 17px;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.s_inp:hover{
+    background-color: #00000047;
+}
+
+.s_inp:focus{
+    border: 2px solid #e8bf00cc;
+    background-color: #00000047;
+}
+
+#plus{
+    border: 2px solid #ffffff87;
+    border-radius: 50%;
+    display: block;
+    width: 48px;
+    height: 41px;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff8a;
+    margin-left: 10px;
+    transition: .3s;
+}
+
+#plus:hover{
+    background-color: #e8bf00;
+    color: white;
+    cursor: pointer;
+}
+
+#result{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.submit_btn{
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #2d9ccc;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.submit_btn:hover{
+    cursor: pointer;
+    background-color: #e8bf00;
+}
+
+.screen{
+    background-color: #000000ad;
+    width: 100%;
+    height: 104%;
+    position: fixed;
+    top: 0;
+}
+
+.message{
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 125px;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'roboto_li';
+    src: url("assets/fonts/roboto/Roboto-Light.ttf");
+}
+
+.btn_ok{
+    border: 2px solid #0182b4;
+    background-color: #0182b4;
+    color: white;
+    border-radius: 5px;
+    width: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    transition: .3s;
+}
+
+.btn_ok:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.add_season{
+    border: 1px solid #017fb8;
+    box-sizing: border-box;
+    padding: 10px;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    font-family: 'roboto_li';
+    color: white;
+    background-color: #017fb8;
+    transition: .3s;
+    margin-bottom: -5px;
+}
+
+.add_season:hover{
+    cursor: pointer;
+    background-color: #0070a32b;
+}
+
+.season_title{
+    font-family: 'roboto_li';
+    color: white;
+}
+
+.chapter_inp{
+    background-color: #ffffffbd;
+    border: none;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 50%;
+    color: #0d1114;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.chapter_title_inp{
+    background-color: #ffffffbd;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 50%;
+    color: #0d1114;
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+.chapter_inp::placeholder{
+    color: #313f4a;
+}
+
+.wrap_chap_inp{
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.add_chap_btn{
+    font-family: 'roboto_li';
+    color: white;
+    border: none;
+    background-color: #017fb8;
+    font-size: 2.2rem;
+    font-weight: 600;
+    width: 45px;
+    padding-left: 13px;
+    box-sizing: border-box;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: inset 19px 0px 10px -12px rgb(0 0 0 / 40%);
+    transition: .3s;
+}
+
+.add_chap_btn:hover{
+    background-color: #004b6e;
+    cursor: pointer;
+}
+
+.add_chap_btn:active{
+    background-color: #002536;
+}
+
+.results_chapters{
+    color: white;
+    position: absolute;
+    left: 530px;
+    margin-top: 6px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.file_name_container{
+    font-family: 'roboto_li';
+    border: 1px solid #017fb8;
+    background-color: #017fb833;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 300px;
+    overflow: hidden;
+    color: #afe6ff;
+    transition: .2s;
+}
+
+.file_name_container:hover{
+    background-color: #78bfeb;
+    color: #003d59;
+}
+
+.draw_line{
+    height: 10px;
+    width: 57px;
+    border-bottom: 2px solid #1693ce;
+    position: absolute;
+    top: 11px;
+    left: 467px;
+    display: none;
+}
+
+.fold{
+    height: 38px;
+    position: absolute;
+    left: 843px;
+    top: -7px;
+    border: 1px solid #017fb8;
+    background-color: #017fb833;
+    /* box-sizing: border-box; */
+    padding: 7px;
+    border-radius: 50px;
+    display: none;
+    transition: .3s;
+}
+
+.fold:hover{
+    cursor: pointer;
+    background-color: #017fb8;
+}
+
+.season_title_inp{
+    background-color: #ffffffbd;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    color: #0d1114;
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.season_title{
+    font-size: 1.5rem;
+    color: #ffffffd4;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+#dinamic_wrapper_season{
+    background-color: #017fb838;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.season_list_wrap{
+    margin-bottom: 20px;
+}
+
+.each_season{
+    font-family: 'roboto_li';
+    background-color: #017fb838;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
